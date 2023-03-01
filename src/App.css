@@ -1,38 +1,357 @@
-.App {
-  text-align: center;
+.appContainer {
+    width: 1308px;
+    padding: 0 66px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Шапка сайта*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Продукты*/
+.bestSeller {
+    margin-bottom: 100px;
+    padding-top: 36px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bestSeller h2 {
+    font-size: 35px;
+    color: #22262A;
 }
 
-.App-link {
-  color: #61dafb;
+/*Карточки*/
+.cards {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 47px;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Карточка*/
+.card {
+    width: 303px;
+    border: 3px solid #F6F7F8;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card img {
+    height: 273px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.card h4 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #223263;
+    padding: 0 36px;
+    flex: 1;
+}
+
+.card .price {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #2068F8;
+    margin-bottom: 30px;
+}
+
+.card a {
+    background-color: white;
+    border: 1px solid #2068F8;
+    border-radius: 2px;
+    padding: 10px 0;
+    width: 80%;
+    color: #2068F8;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: center;
+    margin-bottom: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+}
+
+/*Страница продукта/товара*/
+
+/*Вернуться на главную страницу*/
+.arrowBack img {
+    margin-right: 10px;
+}
+
+.arrowBack a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D0C0B;
+    text-decoration: none;
+    display: block;
+    margin: 36px 0;
+}
+
+/*Продукт*/
+.product {
+    display: flex;
+    column-gap: 48px;
+    margin-bottom: 62px;
+}
+
+.product img {
+    width: 60%;
+    height: 504px;
+    object-fit: contain;
+}
+
+.product .info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .info .title {
+    color: #22262A;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0 0 7px 0;
+}
+
+.product .info .price {
+    color: #2068F8;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0 0 7px 0;
+}
+
+.product .info .rating {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #F6F7F8;
+    margin-bottom: 30px;
+}
+
+.product .info .rating p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0 7px 0 0;
+}
+
+.product .info .rating img {
+    width: 16px;
+    height: 16px;
+}
+
+.product .info .category {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.product .info .category span {
+    margin-right: 70px;
+}
+
+.product .info .category p {
+    margin: 0;
+}
+
+.product .info .category p:first-letter {
+    text-transform: uppercase;
+}
+
+.product .info .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E5E5E;
+    margin: 0;
+    flex: 1 1;
+}
+
+.product .info button {
+    background: #2068F8;
+    border-radius: 4px;
+    width: 100%;
+    padding: 14px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.product .info button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/*Отзывы*/
+.reviewBox {
+    margin-bottom: 200px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+}
+
+.review h3 {
+    color: #22262A;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.review textarea {
+    width: 100%;
+    border: 1px solid #E0DFDC;
+    border-radius: 2px;
+    height: 66px;
+    margin-bottom: 24px;
+    color: #22262A;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.review textarea::placeholder {
+    color: #22262A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.review button {
+    background-color: white;
+    border: 1px solid #2068F8;
+    border-radius: 2px;
+    padding: 10px;
+    color: #2068F8;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: flex-end;
+    margin-bottom: 36px;
+    cursor: pointer;
+    width: 170px;
+}
+
+.reviewField {
+    padding: 38px 48px 50px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.reviewField .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewField .info .user {
+    display: flex;
+    flex-grow: 1;
+}
+
+.reviewField .info .user img {
+    margin-right: 12px;
+}
+
+.reviewField .info .user .infoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewField .info .user .infoBox .author {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0;
+}
+
+.reviewField .info .user .infoBox .rating {
+    margin: 0;
+}
+
+.reviewField .info .date {
+    margin: 0;
+}
+
+.reviewField .content .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+/*Разделитель*/
+.divider {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.14);
+    border: none;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+
+/*Loader*/
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #FF3D00 transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
