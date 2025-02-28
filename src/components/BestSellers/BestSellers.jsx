@@ -1,8 +1,35 @@
 import {useEffect, useState} from 'react';
-import axios from 'axios';
-/*Шаг №4 как использовать "react-router-dom".*/
+/*Шаг №4 как использовать react-router-dom.*/
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
+export const BestSellers = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+            axios.get('https://masterclass.kimitsu.it-incubator.io/api/products')
+                .then((res) => { setProducts(res.data) });
+        },
+        []);
+
+    return <div className='bestSeller'>
+        <h1>Best Sellers</h1>
+
+        <div className='cards'>
+            {products.map(product => {
+                return <div className='card' key={product.id}>
+                    <img src={product.image} alt='img'/>
+                    <h4>{product.title}</h4>
+                    <p className='price'>${product.price}</p>
+                    {/*Шаг №5 как использовать react-router-dom.*/}
+                    <Link to={`/products/${product.id}`}>Show more</Link>
+                </div>
+            })}
+        </div>
+    </div>
+};
+
+/*Локальная версия "products".*/
 // const products = [
 //     {
 //         _id: "62bde0f941e732c5cfc7897f",
@@ -36,35 +63,3 @@ import {Link} from 'react-router-dom';
 //         updatedAt: "2022-06-30T17:44:25.381Z",
 //     }
 // ];
-
-export const BestSellers = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://masterclass.kimitsu.it-incubator.ru/api/products')
-            .then((res) => {
-                setProducts(res.data);
-            });
-    }, []);
-
-    return (
-        <>
-            <div className='bestSeller'>
-                <div className='cards'>
-                    {products.map(product => {
-                        return (
-                            <div className='card'>
-                                <img src={product.image} alt='img'/>
-                                <h4>{product.title}</h4>
-                                <p className='price'>${product.price}</p>
-
-                                {/*Шаг №5 как использовать "react-router-dom".*/}
-                                <Link to={`/products/${product.id}`}>Show more</Link>
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
-        </>
-    );
-};

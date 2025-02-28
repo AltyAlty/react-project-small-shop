@@ -7,7 +7,7 @@ export const Loader = () => {
             justifyContent: 'center',
             alignItems: 'center'
         }}>
-            <span className='loader'></span>
+            <span className='loader'>Loading</span>
         </div>
     );
 };

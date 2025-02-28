@@ -1,54 +1,31 @@
-/*
-Гайд: https://safronman.gitbook.io/react-intro-lesson/dop-1.-realizaciya-otzyvov
-
-Что нужно для работы:
-
-npm install axios react-router-dom
-*/
-
-/*Если поставить точку в конце команды "npx create-react-app .", то проект будет создан в папке, в которой мы
-находимся.*/
-
-/*"npm i prettier --save-dev" - команда для установки prettier, чтобы он автоматически форматировал код при сохранении.
-Здесь не используется.*/
-
-/*Кнопка не должна переводить нас на другую страницу, этим должна заниматься ссылка.*/
-
-/*Как использовать "react-router-dom" смотри по шагам.*/
-
+/*Шаг №1 как использовать react-router-dom.*/
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './App.css';
-/*Шаг №1 как использовать "react-router-dom".*/
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from 'react-router-dom';
-import {Header} from './Header';
-import {BestSellers} from './BestSellers';
-import {Product} from './Product';
+import {Header} from './components/Header/Header';
+import {BestSellers} from './components/BestSellers/BestSellers';
+import {Product} from './components/Product/Product';
 
-
-/*Шаг №2 как использовать "react-router-dom".*/
+/*Шаг №2 как использовать react-router-dom.*/
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <BestSellers/>,
+        element: <BestSellers/>
     },
+
     {
         path: '/products/:productID',
-        element: <Product/>,
-    },
+        element: <Product/>
+    }
 ]);
 
-function App(props) {
-    return (
-        <div className='appContainer'>
-            <Header/>
-            <hr className='divider'/>
+const App = () => {
+    return <div className='appContainer'>
+        <Header/>
+        <hr className='divider'/>
 
-            {/*Шаг №3 как использовать "react-router-dom".*/}
-            <RouterProvider router={router}/>
-        </div>
-    );
+        {/*Шаг №3 как использовать react-router-dom.*/}
+        <RouterProvider router={router}/>
+    </div>
 };
 
 export default App;
