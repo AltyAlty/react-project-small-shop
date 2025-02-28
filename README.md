@@ -44,7 +44,7 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
   </tr>
 
   <tr>    
-    <td align="center" width="200">
+    <td width="200">
         npm start
     </td>
     <td width="300">
