@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-/*Шаг №6 как использовать react-router-dom.*/
+/*Шаг №6 как использовать React Router DOM.*/
 import {Link, useParams} from 'react-router-dom';
 import axios from 'axios';
 import rating from '../../assets/img/rating.svg';
@@ -9,13 +9,13 @@ import {Loader} from '../Loader/Loader';
 import {Reviews} from '../Reviews/Reviews';
 
 export const Product = () => {
-    /*Шаг №7 как использовать react-router-dom.*/
+    /*Шаг №7 как использовать React Router DOM.*/
     const {productID} = useParams();
     const [product, setProduct] = useState(null);
     const [isProductInCart, setIsProductInCart] = useState(false);
 
     useEffect(() => {
-            /*Шаг №8 как использовать "react-router-dom".*/
+            /*Шаг №8 как использовать React Router DOM.*/
             axios.get(`https://masterclass.kimitsu.it-incubator.io/api/products/${productID}`)
                 .then((res) => {
                     const product = res.data;
@@ -33,7 +33,7 @@ export const Product = () => {
 
     return <div>
         <div className='arrowBack'>
-            {/*Шаг №9 как использовать react-router-dom.*/}
+            {/*Шаг №9 как использовать React Router DOM.*/}
             <Link to={'/'}>
                 <img src={arrow} alt='Back to Best Sellers'/>
                 Back to Best Sellers

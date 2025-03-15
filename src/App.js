@@ -1,11 +1,11 @@
-/*Шаг №1 как использовать react-router-dom.*/
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+/*Шаг №1 как использовать React Router DOM.*/
+import {createBrowserRouter, RouterProvider, HashRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import {Header} from './components/Header/Header';
 import {BestSellers} from './components/BestSellers/BestSellers';
 import {Product} from './components/Product/Product';
 
-/*Шаг №2 как использовать react-router-dom.*/
+/*Шаг №2 как использовать React Router DOM.*/
 const router = createBrowserRouter([
     {
         path: '/',
@@ -23,8 +23,15 @@ const App = () => {
         <Header/>
         <hr className='divider'/>
 
-        {/*Шаг №3 как использовать react-router-dom.*/}
+        {/*Шаг №3 как использовать React Router DOM.*/}
         <RouterProvider router={router}/>
+
+        {/*<HashRouter>*/}
+        {/*    <Routes>*/}
+        {/*        <Route path="/" element={<BestSellers />} />*/}
+        {/*        <Route path="/products/:productID" element={<Product />} />*/}
+        {/*    </Routes>*/}
+        {/*</HashRouter>*/}
     </div>
 };
 

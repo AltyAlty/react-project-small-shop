@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-/*Шаг №4 как использовать react-router-dom.*/
+/*Шаг №4 как использовать React Router DOM.*/
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
@@ -21,7 +21,7 @@ export const BestSellers = () => {
                     <img src={product.image} alt='img'/>
                     <h4>{product.title}</h4>
                     <p className='price'>${product.price}</p>
-                    {/*Шаг №5 как использовать react-router-dom.*/}
+                    {/*Шаг №5 как использовать React Router DOM.*/}
                     <Link to={`/products/${product.id}`}>Show more</Link>
                 </div>
             })}

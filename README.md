@@ -6,14 +6,22 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
 
 <hr>
 
+<p align="center">
+  <a href="https://altyalty.github.io/react-project-small-shop/">
+    <strong>Link to the page</strong>
+  </a>
+</p>
+
+<hr>
+
 <h3 align="center" font-size='25px'>Tech Stack</h3>
 
 <table align="center">
-  <tr>    
+  <tr>
     <td align="center" width="106">
         <img src="./readme-images/javascript-icon.png" alt="icon" width="65" height="65" />
       <br>Javascript
-    </td> 
+    </td>
     <td align="center" width="106">
         <img src="./readme-images/react-icon.png" alt="icon" width="65" height="65" />
       <br>React
@@ -34,22 +42,40 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
 <h3 align="center" font-size='25px'>Scripts</h3>
 
 <table align="center">
-  <tr>    
+  <tr>
     <td align="center" width="200">
         <b>Script</b>
     </td>
-    <td align="center" width="300">
+    <td align="center" width="500">
         <b>Description</b>
-    </td>    
+    </td>
   </tr>
 
-  <tr>    
+  <tr>
     <td width="200">
         npm start
     </td>
     <td width="300">
         Runs the application
-    </td>    
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+        npm run build
+    </td>
+    <td>
+        Makes a build for GitHub Pages (read index.js before doing that)
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+        gh-pages -d build
+    </td>
+    <td>
+        Deploys the build to GitHub Pages
+    </td>
   </tr>
 </table>
 
