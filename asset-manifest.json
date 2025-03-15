@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/demo-spa-source-code/static/css/main.472c5f68.css",
-    "main.js": "/demo-spa-source-code/static/js/main.ae3635fe.js",
-    "static/js/488.a7eede60.chunk.js": "/demo-spa-source-code/static/js/488.a7eede60.chunk.js",
-    "static/media/logo.svg": "/demo-spa-source-code/static/media/logo.629722e5b80c3481445e8c6fdb26eca2.svg",
-    "static/media/avatarIcon.svg": "/demo-spa-source-code/static/media/avatarIcon.1319a3a7c268d68476b15f881d572aad.svg",
-    "static/media/cartWhite.svg": "/demo-spa-source-code/static/media/cartWhite.fc9ce25e30345e257620c2619ef380e9.svg",
-    "static/media/cart.svg": "/demo-spa-source-code/static/media/cart.9779896aff320189ecda00dfd696cb39.svg",
-    "static/media/rating.svg": "/demo-spa-source-code/static/media/rating.939d820e05a21cb3f1667d25b0e88c50.svg",
-    "index.html": "/demo-spa-source-code/index.html",
-    "static/media/arrowBack.svg": "/demo-spa-source-code/static/media/arrowBack.f49f0b20f2c5e1a7ebe6cdb042456c60.svg",
-    "main.472c5f68.css.map": "/demo-spa-source-code/static/css/main.472c5f68.css.map",
-    "main.ae3635fe.js.map": "/demo-spa-source-code/static/js/main.ae3635fe.js.map",
-    "488.a7eede60.chunk.js.map": "/demo-spa-source-code/static/js/488.a7eede60.chunk.js.map"
+    "main.css": "/react-project-small-shop/static/css/main.472c5f68.css",
+    "main.js": "/react-project-small-shop/static/js/main.3cf75041.js",
+    "static/js/488.a7eede60.chunk.js": "/react-project-small-shop/static/js/488.a7eede60.chunk.js",
+    "static/media/logo.svg": "/react-project-small-shop/static/media/logo.629722e5b80c3481445e8c6fdb26eca2.svg",
+    "static/media/avatarIcon.svg": "/react-project-small-shop/static/media/avatarIcon.1319a3a7c268d68476b15f881d572aad.svg",
+    "static/media/cartWhite.svg": "/react-project-small-shop/static/media/cartWhite.fc9ce25e30345e257620c2619ef380e9.svg",
+    "static/media/cart.svg": "/react-project-small-shop/static/media/cart.9779896aff320189ecda00dfd696cb39.svg",
+    "static/media/rating.svg": "/react-project-small-shop/static/media/rating.939d820e05a21cb3f1667d25b0e88c50.svg",
+    "index.html": "/react-project-small-shop/index.html",
+    "static/media/arrowBack.svg": "/react-project-small-shop/static/media/arrowBack.f49f0b20f2c5e1a7ebe6cdb042456c60.svg",
+    "main.472c5f68.css.map": "/react-project-small-shop/static/css/main.472c5f68.css.map",
+    "main.3cf75041.js.map": "/react-project-small-shop/static/js/main.3cf75041.js.map",
+    "488.a7eede60.chunk.js.map": "/react-project-small-shop/static/js/488.a7eede60.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.472c5f68.css",
-    "static/js/main.ae3635fe.js"
+    "static/js/main.3cf75041.js"
   ]
 }
