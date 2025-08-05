@@ -61,6 +61,15 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
 
   <tr>
     <td width="200">
+        npm install
+    </td>
+    <td width="300">
+        Installs project dependencies 
+    </td>
+  </tr>
+
+  <tr>
+    <td width="200">
         npm start
     </td>
     <td width="300">
