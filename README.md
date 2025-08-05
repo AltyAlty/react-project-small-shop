@@ -56,7 +56,7 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
         npm start
     </td>
     <td width="300">
-        Runs the application
+        Runs application
     </td>
   </tr>
 
