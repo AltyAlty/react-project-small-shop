@@ -34,6 +34,14 @@ The application was made with this guide: https://safronman.gitbook.io/react-int
         <img src="./readme-images/axios-icon.png" alt="icon" width="65" height="65" />
       <br>Axios
     </td>
+    <td align="center" width="106">
+        <img src="./readme-images/npm-icon.png" alt="icon" width="65" height="65" />
+      <br>NPM
+    </td>
+    <td align="center" width="106">
+        <img src="./readme-images/github-pages-icon.png" alt="icon" width="65" height="65" />
+      <br>GitHub Pages
+    </td>
   </tr>
 </table>
 
