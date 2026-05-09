@@ -2,7 +2,7 @@
   "name": "001-react-project-small-shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://altyalty.github.io/react-project-small-shop/",
+  "homepage": "",
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
